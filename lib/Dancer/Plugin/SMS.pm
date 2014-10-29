@@ -4,11 +4,11 @@ use strict;
 use Dancer::Plugin;
 use SMS::Send;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 NAME
 
-Dancer::Plugin::SMS - Easy SMS sending from Dancer apps
+Dancer::Plugin::SMS - Easy SMS text message sending from Dancer apps
 
 
 =head1 SYNOPSIS
@@ -16,7 +16,7 @@ Dancer::Plugin::SMS - Easy SMS sending from Dancer apps
 In your Dancer app:
 
     # Positional params ($to, $message)
-    sms '+440788....', 'Hello there!';
+    sms '+44788....', 'Hello there!';
 
     # Or named params
     sms to => '+44...', text => 'Hello!';
@@ -38,7 +38,7 @@ details) - example configuration for using L<SMS::Send::AQL>:
 Provides a quick and easy way to send SMS messages using L<SMS::Send> drivers
 (of which there are many, so chances are the service you want to use is already
 supported; if not, they're easy to write, and if you want to change providers
-later, you can simply update a few lines in your config file, and you're done.
+later, you can simply update a few lines in your config file, and you're done).
 
 
 =head1 Keywords
@@ -94,7 +94,7 @@ register_plugin;
 
 =head1 AUTHOR
 
-David Precious, C<< <davidp at preshweb.co.uk> >>
+David Precious, C<< <davidp@preshweb.co.uk> >>
 
 =head1 BUGS
 
@@ -114,7 +114,7 @@ L<http://www.perldancer.org/irc> for web IRC.
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright 2011 David Precious.
+Copyright 2011-2014 David Precious.
 
 This program is free software; you can redistribute it and/or modify it
 under the terms of either: the GNU General Public License as published
